@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Store | متجر الإلكترونيات</title>
+
+    <!-- Bootstrap يساعدنا في ترتيب الصفحة على أحجام الشاشات المختلفة -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+
+    <!-- ملف التنسيقات الخاص بنا -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container d-flex justify-content-between align-items-center flex-wrap gap-3">
+            <h1 class="site-title">Tech Store</h1>
+
+            <nav class="main-nav">
+                <a href="index.html">الرئيسية</a>
+                <a href="products.html">المنتجات</a>
+                <a href="cart.html">السلة</a>
+                <a href="orders.html">طلباتي</a>
+                <a href="admin.html">الإدارة</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero text-center">
+            <div class="container">
+                <h2>مرحبًا بك في Tech Store</h2>
+                <p>اكتشف أحدث الأجهزة الإلكترونية واختر ما يناسبك.</p>
+                <a class="btn btn-primary" href="products.html">تسوق الآن</a>
+            </div>
+        </section>
+
+        <section class="container page-section">
+            <h2 class="section-title">تسوق حسب التصنيف</h2>
+            <div class="row g-3">
+                <div class="col-6 col-md-3">
+                    <div class="category-card">الهواتف</div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="category-card">اللابتوبات</div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="category-card">السماعات</div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="category-card">الإكسسوارات</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container page-section">
+            <h2 class="section-title">منتجات مميزة</h2>
+            <div class="row g-3">
+                <div class="col-12 col-md-6">
+                    <article class="product-card">
+                        <img src="images/phone.svg" alt="هاتف ذكي من سامسونج">
+                        <h3>Samsung Galaxy</h3>
+                        <p>هاتف ذكي بمواصفات مميزة.</p>
+                        <p class="product-price">500 دولار</p>
+                        <a class="btn btn-outline-primary" href="products.html">عرض المنتجات</a>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <article class="product-card">
+                        <img src="images/laptop.svg" alt="لابتوب من لينوفو">
+                        <h3>Lenovo Laptop</h3>
+                        <p>لابتوب مناسب للعمل والدراسة.</p>
+                        <p class="product-price">750 دولار</p>
+                        <a class="btn btn-outline-primary" href="products.html">عرض المنتجات</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer text-center">
+        <div class="container">
+            <h2>Tech Store</h2>
+            <p>متجرك الإلكتروني لأحدث الأجهزة والتقنيات.</p>
+            <p>جميع الحقوق محفوظة لمتجر Tech Store &copy; 2026</p>
+        </div>
+    </footer>
+</body>
+</html>

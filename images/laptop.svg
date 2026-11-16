@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 640 420">
+  <rect width="640" height="420" rx="28" fill="#e8f5ee"/>
+  <rect x="155" y="85" width="330" height="220" rx="16" fill="#183b56"/>
+  <rect x="170" y="100" width="300" height="190" rx="8" fill="#7cc6a4"/>
+  <path d="M105 315h430l-35 35H140z" fill="#315d50"/>
+  <text x="320" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" fill="#245c45">لابتوب</text>
+</svg>

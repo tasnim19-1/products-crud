@@ -1,0 +1,273 @@
+/* تنسيق عام للصفحة */
+body {
+    margin: 0;
+    background-color: #f5f7fa;
+    color: #222;
+    font-family: Arial, sans-serif;
+}
+
+/* رأس الصفحة */
+.site-header {
+    padding: 18px 0;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dddddd;
+}
+
+.site-title {
+    margin: 0;
+    color: #145da0;
+    font-size: 26px;
+}
+
+.main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.main-nav a {
+    color: #222;
+    text-decoration: none;
+}
+
+.main-nav a:hover {
+    color: #145da0;
+}
+
+/* القسم الترحيبي */
+.hero {
+    padding: 70px 15px;
+    background-color: #e7f1ff;
+}
+
+.hero h2 {
+    margin-bottom: 12px;
+    color: #123b62;
+}
+
+.hero p {
+    margin-bottom: 20px;
+}
+
+/* الأقسام والبطاقات */
+.page-section {
+    padding-top: 35px;
+    padding-bottom: 15px;
+}
+
+.section-title {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.category-card {
+    padding: 25px 10px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.product-card {
+    height: 100%;
+    padding: 18px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    font-size: 20px;
+}
+
+.product-price {
+    color: #145da0;
+    font-weight: bold;
+}
+
+/* أسفل الصفحة */
+.site-footer {
+    margin-top: 40px;
+    padding: 25px 0;
+    background-color: #123b62;
+    color: #ffffff;
+}
+
+.site-footer h2 {
+    font-size: 22px;
+}
+
+.site-footer p {
+    margin-bottom: 8px;
+}
+
+/* ملخص سلة المشتريات */
+.cart-summary {
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+.cart-item img {
+    max-width: 100%;
+}
+
+/* صندوق نموذج إتمام الطلب */
+.checkout-box {
+    max-width: 700px;
+    padding: 22px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+.checkout-box h3 {
+    margin-bottom: 18px;
+    font-size: 21px;
+}
+
+/* بطاقات سجل الطلبات */
+.orders-list {
+    display: grid;
+    gap: 16px;
+}
+
+.order-card {
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+.order-card h3 {
+    color: #145da0;
+    font-size: 20px;
+}
+
+.order-card summary {
+    cursor: pointer;
+    color: #145da0;
+    font-weight: bold;
+}
+
+/* بطاقات الإحصاءات في لوحة الإدارة */
+.admin-stat {
+    height: 100%;
+    padding: 18px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+.admin-stat h3 {
+    font-size: 17px;
+}
+
+.admin-stat p {
+    margin: 8px 0 0;
+    color: #145da0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* رسم أفقي بسيط يوضح عدد الطلبات حسب الحالة */
+.status-chart {
+    display: grid;
+    gap: 12px;
+}
+
+.chart-row {
+    display: grid;
+    grid-template-columns: minmax(120px, 180px) 1fr;
+    align-items: center;
+    gap: 12px;
+}
+
+.chart-track {
+    height: 16px;
+    overflow: hidden;
+    background-color: #e5e7eb;
+    border-radius: 10px;
+}
+
+.chart-bar {
+    height: 100%;
+    background-color: #145da0;
+    border-radius: 10px;
+}
+
+@media (max-width: 480px) {
+    .chart-row {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+}
+
+/* جدول المنتجات بلوحة الإدارة */
+.table-responsive {
+    border-radius: 8px;
+}
+
+.table {
+    min-width: 650px;
+}
+
+.table th {
+    background-color: #e7f1ff;
+}
+
+/* تفاصيل المنتج */
+.product-details {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 28px;
+    padding: 22px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+.product-details img {
+    width: 100%;
+    max-height: 420px;
+    border-radius: 8px;
+    object-fit: cover;  
+}
+
+.quantity-control {
+    max-width: 180px;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 700px) {
+    .product-details {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* أزرار التنقل بين صفحات الكتالوج */
+.pagination-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+/* مؤشر واضح للعناصر المحددة بلوحة المفاتيح */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #f0a500;
+    outline-offset: 2px;
+}
